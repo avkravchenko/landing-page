@@ -1,0 +1,127 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    
+}
+
+body {
+    background-color: #131313;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 83px;
+    background-color: #131313;
+}
+
+
+.start {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11px;
+    color: #E3B873;
+    text-transform: uppercase;
+    /* left: 646px; */
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: fit-content;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11px;
+}
+
+.center ul>li:first-child {
+    color: #E3B873;
+}
+
+.center ul>li {
+    display: inline;
+    padding: 0px 20px 0px 20px;
+    list-style-type: none;
+    color: #ffffff;
+}
+
+.end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: fit-content;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11px;
+    flex-wrap: nowrap;
+}
+
+.end ul li {
+    list-style-type: none;
+    display: inline;
+    color: #ffffff;
+}
+
+.end ul .button {
+    padding: 10.5px 17px;
+    background-color: #E3B873;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-left: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.end ul {
+    width: fit-content;
+}
+
+.title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main_block .title>span {
+    color: #E3B873;
+}
+
+.relative_block {
+    position: relative;
+}
+
+.cover_img {
+    width: 100%;
+    opacity: 30%;
+}
+
+.desc {
+    position: absolute;
+    left: 9.31%;
+    right: 43.74%;
+    top: 35.06%;
+    bottom: 51.65%;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.text{
+    display: flex;
+    max-width: 504px;
+}
