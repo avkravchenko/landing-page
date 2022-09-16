@@ -99,6 +99,8 @@ body {
 
 .relative_block {
     position: relative;
+    display: flex;
+
 }
 
 .cover_img {
@@ -115,7 +117,6 @@ body {
     position: absolute;
     left: 9.31%;
     right: 43.74%;
-    top: 35.06%;
     bottom: 51.65%;
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -126,6 +127,52 @@ body {
 }
 
 .text{
+    margin: 20px 0px;
     display: flex;
     max-width: 504px;
+}
+
+.button1, .button2 {
+    display: flex;
+    align-items: center;
+    background: #E3B873;
+    border-radius: 2px;
+    text-align: center;
+    justify-content: center;
+}
+
+.button1 {
+    margin-right: 20px;
+    width: 207px;
+    Height: 51px;
+    Width: 207px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+}
+
+.button2 {
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    Width: 207px;
+    Height: 51px;
+    background: none;
+}
+
+.button1>a, .button2>a {
+    font-family: 'Nunito Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
 }
