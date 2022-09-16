@@ -1,14 +1,16 @@
 * {
     margin: 0%;
     padding: 0%;
-    max-width: 100vw;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #131313;
     max-width: 100vw;
     height: 100vh;
 }
+
+
+/* NAVIGATION START */
 
 .navigation {
     display: flex;
@@ -83,6 +85,9 @@ body {
     width: fit-content;
 }
 
+/* NAVIGATION END */
+
+/* TEXT BLOCK START*/
 .title {
     font-family: 'Yeseva One';
     font-style: normal;
@@ -93,24 +98,8 @@ body {
     color: #FFFFFF;
 }
 
-.main_block .title>span {
+.title>span {
     color: #E3B873;
-}
-
-.relative_block {
-    position: relative;
-    display: flex;
-
-}
-
-.cover_img {
-    width: 100%;
-    opacity: 30%;
-}
-
-.cover_img img {
-    min-width: 100%;
-    min-height: 100vh;
 }
 
 .desc {
@@ -133,6 +122,25 @@ body {
     max-width: 504px;
 }
 
+/* TEXT BLOCK END */
+
+/* IMG STUFF START*/
+
+.main_block {
+    position: relative;
+    background-color: #131313;
+    background-image: url(img\main-cover.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* IMG STUFF END */
+
+
+
+/* BUTTON STUFF START*/
 .button1, .button2 {
     display: flex;
     align-items: center;
@@ -177,3 +185,4 @@ body {
     margin-top: 20px;
     display: flex;
 }
+/* BUTTON STUFF END */
