@@ -38,6 +38,7 @@ body {
     list-style-type: none;
     color: #ffffff;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .end {
