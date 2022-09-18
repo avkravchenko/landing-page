@@ -38,6 +38,9 @@ body {
     list-style-type: none;
     color: #ffffff;
     cursor: pointer;
+}
+
+.center ul >a {
     text-decoration: none;
 }
 
