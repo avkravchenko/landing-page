@@ -177,3 +177,17 @@ ul {
 }
 
 /* BUTTON STUFF END */
+
+
+
+/*---------------------------------------------------------- STEP 2 */
+
+.nav {
+    display: flex;
+    position: relative;
+}
+
+.city {
+    list-style: none;
+    
+}
