@@ -182,12 +182,64 @@ ul {
 
 /*---------------------------------------------------------- STEP 2 */
 
-.nav {
-    display: flex;
-    position: relative;
+.second_body {
+    width: 100vw;
+    height: 100%;
+    background: #FFFFFF;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-.city {
-    list-style: none;
-    
+.void {
+    background-color: #131313;
+    height: 1074px;
+    position: relative;
 }
+.nav-of-first-block {
+    position: absolute;
+    left: 43.45%;
+    right: 13.16%;
+    top: 4.21%;
+    bottom: 95.14%;
+}
+ 
+.nav-of-first-block ul{
+    color: #ffffff30;
+    list-style: none;
+}
+
+.nav-of-first-block ul li {
+    margin: 20px;
+}
+
+.nav-of-first-block ul li:first-child {
+    color: #E3B873;
+    border-bottom: solid 2px;
+    padding-bottom: 5px;
+}
+
+.img {
+    position: absolute;
+    left: 43.45%;
+    right: 9.26%;
+    top: 10.93%;
+    bottom: 74.09%;
+}
+
+.title-of-first-block {
+    color: #E3B873;
+}
+
+.text-block {
+    position: absolute;
+    left: 9.19%;
+    top: 10.93%;
+    max-width: 300px;
+    color: #ffffff;
+}
+.text-block>p {
+    margin-top: 20px ;
+}
+
+
