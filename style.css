@@ -28,9 +28,11 @@
  .nav_of_second_section{
      display: flex;
      width: inherit;
-     margin-right: 8em;
+     position: relative;
+     right: 5em;
      justify-content: flex-end;
-     padding-right: 4.5em;
+     padding-right: 2em;
+     top: 4em;
  }
 
  .nav_of_second_section li{
@@ -38,6 +40,9 @@
      list-style-type: none;
      display: inline;
      padding-right: 3em;
+     font-style: normal;
+     text-transform: uppercase;
+     color: rgba(240, 248, 255, 0.183);
  }
 
  .logo {
@@ -75,11 +80,19 @@
      background-size: cover;
  }
 
- .second_step{
+ .second_step, .third_step, .fourth_step {
      background-color: #131313;
      width: 100vw;
      height: 100vh;
  }
+
+ .second_step {
+    height: 80vh;
+ }
+
+.fourth_step {
+    background-color: #fff;
+}
 
  .first_step .content_of_first_section {
      max-width: 1440px;
@@ -90,12 +103,32 @@
      padding-left: 30px;
  }
 
- .content_of_second_section {
+ .content_of_second_section, .content_of_third_section, .content_of_fourth_section {
     max-width: 1440px;
     margin: auto;
     padding-top: 5rem;
     position: relative;
     padding-left: 30px;
+ }
+
+ .content_of_third_section {
+     height: 100vh;   
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .background_of_third_step {
+    background-image:linear-gradient(to bottom, 
+    #131313 0%,
+    #131313 45%,
+    #fff 45%,
+    #fff 100%
+    );
+ }
+
+ .content_of_fourth_section {
+     margin-top: 45em;
  }
 
  .content_text {
@@ -119,6 +152,11 @@
     font-family: 'Nunito Sans', sans-serif;
     color: aliceblue;
  }
+
+ .black_text {
+    color: black;
+    font-style: normal;
+}   
 
  .header-text {
     font-family: 'Yeseva One';
@@ -184,3 +222,161 @@
     right: 5em;
 }
 
+.nav_of_second_section  {
+    left: 2.4em;
+    position: relative;
+    font-size: medium;
+    top: 1em;
+}
+
+.nav_of_second_section ul li:first-of-type {
+    color: #E3B873;
+    border-bottom: #E3B873;
+    border-bottom-width: 2em;
+}
+
+.line {
+    border-bottom-style: solid;
+    border-color: #E3B873;
+    padding-bottom: 0.7em;
+    border-width: 1.5px;
+}
+
+.slider_arrows {
+    position: relative;
+    top: 5em;
+}
+
+.about_camera {
+    max-width: 30%;
+}
+
+.hate {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    margin: 0.1em 0 2em;
+}
+
+.player {
+    position: relative;
+    width: 50%;
+}
+
+.repair_img {
+    margin: 3em auto;
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+}
+
+.player_button {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+.content_of_third_section p {
+    text-align: center;
+}
+
+.form {
+    height: 50px;
+}
+
+.form {
+    display: flex;
+    margin: 5em auto;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.first_input .second_input {
+    margin-right: 2em;
+}
+
+  input[type=text] {
+    width: 100%;
+    padding: 4px 0px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  }
+
+  label {
+    color: #00000040
+  }
+
+  ::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .form_button {
+      border-radius: 2px;
+      padding: 1em 4em;
+  }
+
+  .checkbox {
+      display: flex;
+      max-width: inherit;
+      justify-content: center;
+  }
+
+    .checkbox p {
+        padding: 0 0.5em;
+    }
+
+    .header_of_fourth_section {
+        display: flex;
+        height: 6em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+            margin-top: 10em;
+    }
+
+    .content_of_fourth_section {
+        max-width: 1440px;
+        margin: auto;
+        padding-top: 5rem;
+        position: relative;
+        padding-left: 30px;
+     }
+
+    .fourth_step {
+        display: block;
+    }
+
+    .gallery {
+        display: flex;
+        margin-top: 3em;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .gallery_item1 {
+        position: relative;
+    }
+
+    .desc1 {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 2em 4em;
+        top: 20em;
+        left: 2em;
+        justify-content: flex-start;
+    }
+
+    .redecorating {
+        font-size: medium;
+    }
