@@ -80,7 +80,7 @@
      background-size: cover;
  }
 
- .second_step, .third_step, .fourth_step {
+ .second_step, .third_step, .fourth_step, .sixth_step {
      background-color: #131313;
      width: 100vw;
      height: 100vh;
@@ -95,6 +95,10 @@
     height: auto;
 }
 
+/* .sixth_step {
+    background-color: #fff;
+} */
+
  .first_step .content_of_first_section {
      max-width: 1440px;
      margin: auto;
@@ -104,7 +108,7 @@
      padding-left: 30px;
  }
 
- .content_of_second_section, .content_of_third_section, .content_of_fourth_section {
+ .content_of_second_section, .content_of_third_section, .content_of_fourth_section, .content_of_fifth_step, .content_of_sixth_step {
     max-width: 1440px;
     margin: auto;
     padding-top: 5rem;
@@ -126,10 +130,6 @@
     #fff 45%,
     #fff 100%
     );
- }
-
- .content_of_fourth_section {
-     margin-top: 45em;
  }
 
  .content_text {
@@ -163,7 +163,7 @@
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 27px;
     line-height: 37px;
     text-transform: uppercase;
  }
@@ -397,4 +397,165 @@
         bottom: -2em;
         border-radius: 0%;
         font-size: medium;
+    }
+
+    .list_of_fifth {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 29em;
+    }
+
+    .item_01, .item_02, .item_03, .item_04 {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1em;
+    }
+
+    .fifth_step {
+        background-image: url(img/house.png);
+        background-repeat: no-repeat;
+    }
+
+    .content_of_fifth_step {
+        width: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        right: -5em;
+    }
+
+    .form_of_fifth {
+        position: relative;
+        background-color: #131313;
+        color: #fff;
+        padding: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 34em;
+    }
+
+    .fifth_input label, input {
+        color: #fff;
+    }
+
+    .fifth_input input {
+        background-color: #131313;
+        border-bottom: 1px solid #f0f8ff4a;
+    }
+    .fifth_input ::placeholder {
+        color: #fff;
+    }
+
+    .content_of_form > p {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 17em;
+    }
+
+    .fifth_input label {
+        color: rgba(255, 255, 255, 0.24);
+    }
+
+    .content_of_form {
+        min-width: 25em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 31em;
+    }
+
+    .checkbox .second_check  {
+        display: flex;
+        width: 10em;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-between;
+    }
+
+    .measurer {
+        align-self: flex-end;
+        max-width: 20em;
+    }
+
+    .piggy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: -6.5em;
+        position: absolute;
+        min-width: 25em;
+    }
+
+    .piggy p {
+        color: #E3B873;
+    }
+    .piggy img {
+        display: block;
+        width: 70px;
+        height: 70px;
+    }
+
+    .sixth_step {
+        background: rgba(0, 0, 0, 0.7) url("img/fantasies.png");
+        background-blend-mode: darken;
+        background-size: cover;
+        margin-top: 20em;
+    }
+
+    .header_of_sixth_section {
+        color: #E3B873;
+        font-weight: 400;
+    }
+
+    .content_of_sixth_step {
+        flex-wrap: wrap;
+        gap: 15em;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: inherit;
+    }
+
+    .list_of_arch_styles li{
+        list-style-type: none;
+        line-height: 3em;
+        font-size: 1.2em;
+    }
+
+    .first_col_of_six_step {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .content_of_sixth_step {
+        flex-direction: ;
+    }
+
+    .arch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gallery2 {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .first_col, .second_col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .second_col {
+        position: relative;
+        top: -5em
     }
