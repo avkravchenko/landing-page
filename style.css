@@ -171,6 +171,7 @@
     flex-wrap: wrap;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
  }
 
@@ -274,7 +275,6 @@
 .nav_of_second_section{
     width: inherit;
     display: flex;
-    flex-basis: 82em;
     font-size: medium;
     justify-content: flex-end;
 }
@@ -779,7 +779,20 @@
         gap: 3em;
     }
 
+    .test {
+        max-height: 33em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: space-between;
+    }
 
+    .slider {
+        display: flex;
+        width: auto;
+        flex-basis: 457em;
+    }
 
     @media screen and (max-width:414px) {
         .mid_nav, .gold-button {
@@ -879,7 +892,5 @@
             width: fit-content;
         }
         
-        .test {
-            gap: 1em;
-        }
+        
     }
