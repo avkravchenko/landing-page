@@ -143,7 +143,7 @@
      background: rgba(0, 0, 0, 0.85) url("img/building.png");
      background-blend-mode: darken;
      background-size: cover;
-     height: 60em;
+     height: fit-content;
  }
 
 .fourth_step, .seventh_step  {
@@ -777,4 +777,109 @@
     .mid_nav {
         display: flex;
         gap: 3em;
+    }
+
+
+
+    @media screen and (max-width:414px) {
+        .mid_nav, .gold-button {
+            display: none;
+        }
+
+        .header_nav, .number {
+            /* font-size: 2.5em; */
+            height: 10em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header_content {
+            padding: 0em 2em;
+        }
+
+        .first_step {
+            width: 100%;
+            height: 120em;
+        }
+
+        .content_of_first_section, .content_of_second_section {
+            width: 100vw;
+            /* font-size: 2.5em; */
+            justify-content: center;
+            padding: 5em;
+        }
+
+        .logo {
+            font-size: 2.5em;
+        }
+
+        .buttons {
+            flex-direction: column;
+            font-size: large;
+            max-width: inherit;
+            gap: 4em;
+        }
+        
+        .calc, .sub {
+            height: 5em;
+            width: inherit;
+        }
+
+        .common-font {
+            font-size: 2.5em;
+        }
+
+        .content_text {
+            font-size: 1.5em;
+            /* width: 81em; */
+            /* max-width: 1356px; */
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+            height: auto;
+            color: #fff;
+        }
+
+        .lead-header {
+            font-size: 4em;
+        }
+
+        .nav_of_second_section {
+            display: none;
+        }
+
+        .content_of_second_section {
+            margin-top: 1em;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Completed_projects {
+            width: inherit;
+            text-align: center;
+        }
+
+        .header-text {
+            font-size: 2.5em;
+            line-height: 1em;
+        }
+
+        .slider_arrows {
+            display: none;
+        }
+
+        .slider {
+            order: 2;
+        }
+
+        .description {
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+        }
+        
+        .test {
+            gap: 1em;
+        }
     }
