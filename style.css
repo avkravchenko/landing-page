@@ -837,7 +837,6 @@
         }
 
         .header_nav, .number {
-            /* font-size: 2.5em; */
             height: 10em;
             display: flex;
             align-items: center;
@@ -864,7 +863,6 @@
 
         .content_of_first_section, .content_of_second_section {
             width: 100vw;
-            /* font-size: 2.5em; */
             justify-content: center;
             padding: 5em;
         }
@@ -909,7 +907,6 @@
         .content_of_second_section, .content_of_third_section,.content_of_fourth_section,.cnt_of_form {
             flex-direction: column;
             align-items: center;
-            /*   */
         }
 
         .Completed_projects {
@@ -1045,7 +1042,7 @@
 
         .checkbox {
             justify-content: flex-start;
-            width: 70em;
+            width: auto;
             max-width: none;
         }
 
@@ -1220,8 +1217,8 @@
 
         .content_of_final_section {
             position: static;
-            padding-top: 21em;
-            height: 186em;
+            padding: 9em;
+            height: auto;
         }
 
         .map {
