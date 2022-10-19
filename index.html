@@ -69,7 +69,8 @@
                         <div class="column1">
                             <div>
                                 <h3>City:</h3>
-                                <p class="common-font">Rostov-on-DonLCD <br> admiral</p>
+                                <p class="common-font">Rostov-on-Don <br> 
+                                LCD admiral</p>
                             </div>
                             <div>
                                 <h3>Repair time:</h3>
@@ -88,19 +89,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider"><img src="img/room.png" alt=""></div>
+                    <div class="slider"><img id="picture" src="img/room.png" alt=""></div>
                </div>
             </div>
         </section>
         <section class="third_step background_of_third_step">
             <div class="content_of_third_section">
-                <p class="header_of_third_section"><img src="img/online_control.svg" alt=""></p>
+                <div class="header_of_third_section">
+                    <h3 class="header-text common-font">online control</h3>
+                    <img class="picture_of_camera" src="img/camera.svg" alt=""></div>
                 <div class="player">
                     <img class="repair_img" src="img/repair.png" alt="">
-                    <img class="player_button" src="img/player_button.svg" alt="">  
+                    <!-- <img class="player_button" src="img/player_button.svg" alt="">   -->
                 </div>
                 <div class="about_camera common-font black_text">
-                    <div class="hate"><img src="img/line.svg" alt=""></div> 
+                    <div class="hate"><img id="picture_of_line" src="img/line.svg" alt=""></div> 
                     <p>At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities! Leave a request below and you will receive a link to the broadcast.</p>
                 </div>
             
@@ -114,17 +117,18 @@
                         <input type="text" name="phone" id="phone" placeholder="Your phone number:">
                     </div>
                     <button class="form_button gold-button common-font">SUBMIT</button>
+                    <div class="checkbox"><img src="img/checkbox.svg" alt="">  
+                        <p class="common-font black_text">I agree to the processing of personal data</p>
+                    </div>
                 </form>
-                <div class="checkbox"><img src="img/checkbox.svg" alt="">  
-                    <p class="common-font black_text">I agree to the processing of personal data</p>
-                </div>
+                
              </div> 
         </section>
         <section class="fourth_step">
             <div class="content_of_fourth_section">
                 <div class="header_of_fourth_section">
-                    <h3 class="black_text">TYPES OF REPAIR</h3>
-                    <img src="img/types_of_repair.svg" alt="">
+                    <h3 class="black_text header-text">TYPES OF REPAIR</h3>
+                    <img id="repair" src="img/types_of_repair.svg" alt="">
                 </div>
                 <div class="gallery">
                     <div class="gallery_item1"><img src="img/Redecorating.jpg" alt="">
@@ -225,8 +229,8 @@
         <section class="sixth_step">
             <div class="content_of_sixth_step">
                 <div class="first_col_of_six_step">
-                    <div class="header-text header_of_sixth_section">
-                        <h3>We realize your <br>
+                    <div class="header_of_sixth_section">
+                        <h3 class="header-text">We realize your <br>
                             wildest fantasies</h3>
                     </div>
                     <div class="list_of_arch_styles common-font">
@@ -247,8 +251,8 @@
                 </div>
                 <div class="gallery2">
                     <div class="first_col">
-                        <img src="img/clock.png" alt="">
-                        <img src="img/tv.png" alt="">
+                        <div class="picture1"><img id="picture1" src="img/image 5.png" alt=""></div>
+                        <div class="picture2"><img src="img/tv.png" alt=""></div>
                     </div>
                     <div class="second_col">
                         <img src="img/sofa.png" alt="">
@@ -303,6 +307,30 @@
                     </div>    
             </div>
         </section>  
+
+        <section class="mobile_form">
+            <div class="cnt_of_form">
+                <form class="form common-font black_text mobile">
+                    <h3 class="header-text">have any questions?</h3>
+                    <div class="first_input">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="What is your name:">
+                    </div>
+                    <div class="second_input">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" placeholder="Your phone number:">
+                    </div>
+                    <div class="third_input">
+                        <label for="question">Question</label>
+                        <input type="text" name="question" id="question" placeholder="I want to know:">
+                    </div>
+                    <button class="form_button gold-button common-font">SUBMIT</button>
+                    <div class="checkbox"><img src="img/checkbox.svg" alt="">  
+                        <p class="common-font black_text">I agree to the processing of personal data</p>
+                    </div>
+                </form>
+            </div>
+        </section>
         <section class="final_section">
             <div class="content_of_final_section">
                 <form class="form_of_fifth form_of_final common-font">
@@ -329,7 +357,7 @@
                         </div>
                     </div>    
                 </form>
-                <div class="header-text gold-text">
+                <div class="nansen header-text gold-text">
                     <p style="text-align: center;">Rostov-on-Don, Nansen St., 239 Shopping Center <br>
                     Decorum Tel +7 (928) 768 32 29
                     </p>
@@ -338,7 +366,10 @@
                 <div class="map"><img src="img/map.png" alt=""></div>
             </div>
         </section>     
+
     </main>
+
+
     <footer>
         <div class="content_of_footer">
             <div class="logo gold-text">IC "Repair Design Project"</div>
