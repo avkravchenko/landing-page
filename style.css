@@ -857,6 +857,10 @@
             height: 10em;
         }
 
+        .first_step {
+            height: 135em;
+        }
+
         .second_step {
             height: auto;
         }
@@ -1245,9 +1249,17 @@
         }
 
         .map img {
+            margin-top: 13em;
             height: auto;
             width: 95em;
         }
 
+        .lead-header {
+            font-size: 4em;
+        }
+
+        
+
+        
     }
 
