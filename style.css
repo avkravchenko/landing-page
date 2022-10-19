@@ -74,15 +74,15 @@
 
  .calc, .sub {
     background-color: #E3B873;
-    height: 5em;
-    width: 32em;
+    height: 14rem;
+    width: 5rem;
     border: none;
     border-radius: 0.1em;
 }
 
 .empty {
     background-color: #00000000;
-    border: #fff solid 0.2em;
+    border: #fff solid 0.2rem;
 }
 
  .opacity-button {
@@ -123,7 +123,7 @@
 }
 
 .second_step {
-    padding: 5em 0;
+    padding: 5rem 0;
     height: auto;
 }
 
@@ -202,7 +202,7 @@
  .content_text {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 2rem;
     height: auto;
     color: #fff;
  }
@@ -244,13 +244,12 @@
  }
  
 .Completed_projects {
-    gap: 2em;
+    gap: 5rem;
     height: auto;
-    margin-top: 3em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 30em;
+    max-width: 30rem;
 }
 
 .description {
@@ -333,7 +332,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3em;
+    gap: 3rem;
 }
 
 .content_of_third_section p {
@@ -348,16 +347,9 @@
     gap: 5em;
     flex-wrap: wrap;
     display: flex;
-    margin: 5em auto;
     width: 60%;
     flex-direction: row;
     justify-content: center;
-
-    display: flex;
-    margin: 5em auto;
-    width: 60%;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 .first_input .second_input {
@@ -772,7 +764,7 @@
     }
 
     .lead-header {
-        font-size: 2.5em;
+        font-size: 3rem;
         line-height: inherit;
     }
 
@@ -826,10 +818,12 @@
 
     @media screen and (max-width: 414px) {
 
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            outline: solid red 2px;
+            font-style: normal;
         }
 
         .mid_nav, .gold-button {
@@ -837,7 +831,6 @@
         }
 
         .header_nav, .number {
-            height: 10em;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -849,30 +842,24 @@
 
         .header_nav, .first_step, .second_step,.third_step,.fourth_step,.fifth_step,.sixth_step,.seventh_step,.final_section, footer, .mobile_form {
             max-width: 100vw;
-            height: auto;
-            min-width: 105em;
+            height: auto;   
         }
 
         .header_nav {
-            height: 10em;
+            height: 10rem;
         }
 
         .first_step {
-            height: 135em;
-        }
-
-        .second_step {
-            height: auto;
+            height: 135rem;
         }
 
         .content_of_first_section, .content_of_second_section {
             width: 100vw;
             justify-content: center;
-            padding: 5em;
         }
 
         .logo {
-            font-size: 2.5em;
+            font-size: 3rem;
         }
 
         .buttons {
@@ -883,12 +870,12 @@
         }
         
         .calc, .sub {
-            height: 5em;
+            height: 12rem;
             width: inherit;
         }
 
         .common-font {
-            font-size: 2.5em;
+            font-size: 3rem;
         }
 
         .content_text {
@@ -901,7 +888,7 @@
         }
 
         .lead-header {
-            font-size: 4em;
+            font-size: 5rem;
         }
 
         .nav_of_second_section {
@@ -911,6 +898,7 @@
         .content_of_second_section, .content_of_third_section,.content_of_fourth_section,.cnt_of_form {
             flex-direction: column;
             align-items: center;
+            padding: 5rem;
         }
 
         .Completed_projects {
@@ -935,10 +923,10 @@
             justify-content: flex-start;
             display: flex;
             flex-direction: row;
-            width: 75em;
+            width: 75rem;
             order: 4;
             line-height: normal;
-            gap: 20em;
+            gap: 20rem;
         }
         
         .test {
@@ -947,25 +935,25 @@
             flex-direction: column;
             height: auto;
             max-height: none;
-            gap: 7em;
+            gap: 7rem;
         }
 
         .Completed_projects {
-            min-width: 68em;
+            min-width: 68rem;
         }
 
         .monitor {
-            line-height: 1.5em;
+            line-height: 5.5rem;
         }
 
-        #picture, .repair_img {
-            min-width: 76em;
+        .repair_img {
+            min-width: 76rem;
             height: auto;
         }
         
         .description h3 {
-            font-size: 2.5em;
-            line-height: 3em;
+            font-size: 2.5rem;
+            line-height: 6rem;
         }
 
         .column1, .column2 {
@@ -982,32 +970,34 @@
 
         .picture_of_camera {
             height: auto;
-            width: 25em;
+            width: 25rem;
         }
 
         .player {
-            width: auto;
+            width: 80rem;
+            height: 42rem;
+            margin: 5rem;
+            background-image: url('img/repair.png');
+            background-size: contain ;
         }
 
         .third_step {
             background-color: #131313;
-            height: 143em;
         }
 
         .content_of_third_section {
             background-color: #131313;
-            height: 143em;
         }
 
         .about_camera {
             color: #fff;
-            max-width: 30em;
-            line-height: 1.7em;
+            line-height: 6rem;
+            max-width: none;
         }
 
         #picture_of_line {
             height: auto;
-            width: 10em;
+            width: 30rem;
         }
 
         .form label {
@@ -1017,17 +1007,21 @@
         .form {
             flex-wrap: nowrap;
             flex-direction: column;
-            gap: 2em;
-            width: 28em;
+            gap: 8rem;
+            width: auto;
             height: auto;
             justify-content: space-evenly;
         }
 
+        .content_of_third_section .form {
+            margin-top: 20rem;
+            font-size: 4rem;
+        }
+
         input[type=text] {
-            height: 7em;
-            width: 100%;
-            padding: 4px 0px;
-            margin: 1px 0;
+            font-size: 1.5rem;
+            height: 9rem;
+            padding: 5rem 0px;
             box-sizing: border-box;
             background-color: #131313;
             color: #fff;
@@ -1056,8 +1050,18 @@
 
         .content_of_third_section .form_button {
             display: block;
-            font-size: 1em;
+            font-size: 3rem;
             order: 1;
+            position: relative;
+            bottom: -10rem;
+        }
+
+        .content_of_fourth_section {
+            height: auto;
+        }
+
+        .header_of_fourth_section {
+            height: auto;
         }
 
         .content_of_fourth_section .black_text {
@@ -1098,7 +1102,7 @@
         .desc1 {
             max-width: none;
             font-size: 2.5em;
-            min-width: 26em;
+            /* min-width: 26em; */
             margin-bottom: -8em;
         }
 
@@ -1253,13 +1257,5 @@
             height: auto;
             width: 95em;
         }
-
-        .lead-header {
-            font-size: 4em;
-        }
-
-        
-
-        
     }
 
