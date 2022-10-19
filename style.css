@@ -848,7 +848,7 @@
         }
 
         .header_nav, .first_step, .second_step,.third_step,.fourth_step,.fifth_step,.sixth_step,.seventh_step,.final_section, footer, .mobile_form {
-            max-width: 414px;
+            max-width: 100vw;
             height: auto;
             min-width: 105em;
         }
