@@ -819,7 +819,7 @@
         width: 354px;
     }
 
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 828px) {
 
         * {
             margin: 0;
