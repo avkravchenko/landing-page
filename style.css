@@ -2,6 +2,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     outline: solid 2px red;
  }
 
  .header_nav {
@@ -11,9 +12,8 @@
  }
 
 .header_content  {
-     font-size: 0.8em;
+     font-size: 0.8rem;
      display: flex;
-     padding: 0 1em;
      max-width: 1400px;
      min-width: 1440px;
      height: 85px;
@@ -25,16 +25,14 @@
 
  .header_nav li{
      list-style: none;
-     font-size: 0.8em;
+     font-size: 0.8rem;
      display: inline;
-     margin-left: 1.5em;
  }
 
  .nav_of_second_section li{
      color: aliceblue;
      list-style-type: none;
      display: inline;
-     padding-right: 3em;
      font-style: normal;
      text-transform: uppercase;
      color: rgba(240, 248, 255, 0.183);
@@ -74,10 +72,10 @@
 
  .calc, .sub {
     background-color: #E3B873;
-    height: 14rem;
-    width: 5rem;
+    height: 4rem;
+    width: 15rem;
     border: none;
-    border-radius: 0.1em;
+    border-radius: 0.1rem;
 }
 
 .empty {
@@ -116,7 +114,7 @@
     background: rgba(0, 0, 0, 0.7) url("img/main-cover.png");
     background-blend-mode: darken;
     width: 100%;
-    height: 60em;
+    height: 60rem;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -164,7 +162,6 @@
     max-width: 1440px;
     min-width: 1440px;
     margin: auto;
-    padding: 0 1rem;
  }
 
  .content_of_first_section {
@@ -175,7 +172,7 @@
 }
 
  .content_of_second_section {
-    gap: 4em;
+    gap: 4rem;
     flex-wrap: wrap;
     height: auto;
     display: flex;
@@ -184,6 +181,7 @@
  }
 
  .content_of_third_section {
+     gap: 3rem;
      height: auto;   
      display: flex;
      flex-direction: column;
@@ -242,6 +240,11 @@
     line-height: 37px;
     text-transform: uppercase;
  }
+
+ .noss {
+     display: flex;
+     gap: 3rem;
+ }
  
 .Completed_projects {
     gap: 5rem;
@@ -256,7 +259,7 @@
     color: aliceblue;
     display: flex;
     flex-flow: row wrap;
-    gap: 5em;
+    gap: 5rem;
     height: auto;
     line-height: 26.73px;
 }
@@ -280,7 +283,6 @@
 }
 
 .nav_of_second_section{
-    width: inherit;
     display: flex;
     font-size: medium;
     justify-content: flex-end;
@@ -312,7 +314,11 @@
 
 .player {
     position: relative;
-    width: 50%;
+    filter: brightness(0.3);
+    width: 61rem;
+    height: 32rem;
+    background-image: url(img/repair.png);
+    background-size: cover;  
 }
 
 .repair_img {
@@ -340,16 +346,13 @@
 }
 
 .form {
-    height: 50px;
-}
-
-.form {
-    gap: 5em;
+    gap: 2rem;
     flex-wrap: wrap;
     display: flex;
-    width: 60%;
+    width: 50rem;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    height: auto;
 }
 
 .first_input .second_input {
@@ -396,7 +399,7 @@
 
     .header_of_fourth_section {
         display: flex;
-        height: 6em;
+        height: 6rem;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -411,7 +414,7 @@
 
     .gallery {
         display: flex;
-        margin-top: 3em;
+        margin-top: 3rem;
         height: auto;
         flex-direction: row;
         justify-content: space-around;
@@ -422,15 +425,15 @@
     }
 
     .desc1 {
-        max-width: 23em;
-        height: 20em;
+        max-width: 20rem;
+        height: 22rem;
         display: flex;
         position: relative;
         flex-direction: column;
         background-color: #fff;
-        padding: 1em 4em;
-        top: -11em;
-        left: 1.5em;
+        padding: 1rem 4rem;
+        top: -8rem;
+        left: 2.2rem;
         justify-content: flex-start;
         box-shadow: 1px 1px 30px #1313130d;
     }
@@ -443,7 +446,7 @@
     }
 
     .desc1 ul li {
-        line-height: 2em;
+        line-height: 2rem;
         color: #13131341;
     }
 
@@ -452,7 +455,7 @@
         padding: 10px 17px;
         left: 0;
         position: absolute;
-        bottom: -2em;
+        bottom: -2rem;
         border-radius: 0%;
         font-size: medium;
     }
@@ -461,7 +464,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        max-width: 29em;
+        max-width: 29rem;
     }
 
     .item_01, .item_02, .item_03, .item_04 {
@@ -541,9 +544,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        bottom: -6.5em;
+        bottom: -6.5rem;
         position: absolute;
-        min-width: 25em;
+        min-width: 24rem;
     }
 
     .piggy p {
@@ -570,7 +573,7 @@
 
     .content_of_sixth_step {
         flex-wrap: wrap;
-        gap: 15em;
+        gap: 15rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -579,15 +582,15 @@
 
     .list_of_arch_styles li {
         list-style-type: none;
-        line-height: 2.4em;
-        font-size: 1.5em;
+        line-height: 3.4rem;
+        font-size: 1.5rem;
     }
 
     .first_col_of_six_step {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        gap: 3em;
+        gap: 3rem;
     }
 
     .arch {
@@ -598,6 +601,7 @@
 
     .gallery2 {
         display: flex;
+        gap: 3rem;
     }
 
     .first_col, .second_col {
@@ -605,7 +609,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 3em;
+        gap: 3rem;
     }
 
     .second_col {
@@ -768,7 +772,7 @@
     }
 
     .lead-text {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     footer {
@@ -794,11 +798,11 @@
     }
 
     .test {
-        max-height: 33em;
+        max-height: 33rem;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        gap: 1em;
+        gap: 1rem;
         justify-content: space-between;
     }
 
