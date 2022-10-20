@@ -1165,6 +1165,7 @@
 
         .gallery2 {
             flex-direction: row;
+            gap: 0rem;
         }
 
         .gallery2 img {
