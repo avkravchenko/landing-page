@@ -314,10 +314,9 @@
 
 .player {
     position: relative;
-    filter: brightness(0.3);
     width: 61rem;
     height: 32rem;
-    background-image: url(img/repair.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("img/repair.png");
     background-size: cover;  
 }
 
@@ -767,7 +766,7 @@
     }
 
     .lead-header {
-        font-size: 3rem;
+        font-size: 1.8rem;
         line-height: inherit;
     }
 
@@ -819,7 +818,7 @@
         width: 354px;
     }
 
-    @media screen and (max-width: 828px) {
+    @media screen and (max-width: 414px) {
 
         * {
             margin: 0;
@@ -840,11 +839,14 @@
         }
 
         .header_content {
-            padding: 0em 2em;
+            padding: 0em 1rem;
+            max-width: 100%;
+            min-width: 100%;
         }
 
-        .header_nav, .first_step, .second_step,.third_step,.fourth_step,.fifth_step,.sixth_step,.seventh_step,.final_section, footer, .mobile_form {
-            max-width: 100vw;
+        header .header_nav, .first_step, .second_step,.third_step,.fourth_step,.fifth_step,.sixth_step,.seventh_step,.final_section, footer, .mobile_form {
+            max-width: 100%;
+            min-width: 100%;
             height: auto;   
         }
 
@@ -853,45 +855,50 @@
         }
 
         .first_step {
-            height: 135rem;
+            height: 40rem;
         }
 
         .content_of_first_section, .content_of_second_section {
-            width: 100vw;
+            max-width: 100%;
+            min-width: 100%;
             justify-content: center;
         }
 
+        .content_of_first_section {
+            padding: 1rem;
+        }
+
         .logo {
-            font-size: 3rem;
+            font-size: 1rem;
         }
 
         .buttons {
+            padding-top: 3rem;
             flex-direction: column;
             font-size: large;
             max-width: inherit;
-            gap: 4em;
+            gap: 1.5rem;
         }
+
+
         
         .calc, .sub {
-            height: 12rem;
+            height: 4rem;
             width: inherit;
         }
 
         .common-font {
-            font-size: 3rem;
+            font-size: 1rem;
         }
 
         .content_text {
+            width: 24rem;
             font-size: 1.5em;
             display: flex;
             flex-direction: column;
-            gap: 3em;
+            gap: 1rem;
             height: auto;
             color: #fff;
-        }
-
-        .lead-header {
-            font-size: 5rem;
         }
 
         .nav_of_second_section {
@@ -901,16 +908,19 @@
         .content_of_second_section, .content_of_third_section,.content_of_fourth_section,.cnt_of_form {
             flex-direction: column;
             align-items: center;
-            padding: 5rem;
+            padding: 1rem;
+            max-width: 100%;
+            min-width: 100%;
         }
 
         .Completed_projects {
+            gap: 3rem;
             width: inherit;
             text-align: center;
+            min-width: none;
         }
 
         .header-text {
-            font-size: 65.5px;
             line-height: 1.5;
         }
 
@@ -921,15 +931,22 @@
         .slider {
             order: 1;
         }
+    
+
+        .slider img {
+            max-width: 23.5rem;
+            height: auto;
+        }
 
         .description {
+            margin-top: -3rem;
             justify-content: flex-start;
             display: flex;
             flex-direction: row;
-            width: 75rem;
+            width: 23rem;
             order: 4;
             line-height: normal;
-            gap: 20rem;
+            gap: 0;
         }
         
         .test {
@@ -938,12 +955,12 @@
             flex-direction: column;
             height: auto;
             max-height: none;
-            gap: 7rem;
+            gap: 6rem;
+            max-width: 100%;
+            min-width: 100%;
         }
 
-        .Completed_projects {
-            min-width: 68rem;
-        }
+
 
         .monitor {
             line-height: 5.5rem;
@@ -955,8 +972,9 @@
         }
         
         .description h3 {
-            font-size: 2.5rem;
-            line-height: 6rem;
+            width: 10rem;
+            font-size: 1rem;
+            line-height: 2rem;
         }
 
         .column1, .column2 {
@@ -964,20 +982,34 @@
         }
 
         div.column1, .column2 {
-            gap: 5em;
+            height: 10rem;
+            gap: 2em;
+            width: 10rem;
         }
 
         .picture_of_camera {
             height: auto;
-            width: 25rem;
+            width: 10rem;
         }
 
         .player {
-            width: 80rem;
-            height: 42rem;
-            margin: 5rem;
-            background-image: url('img/repair.png');
-            background-size: contain ;
+            position: relative;
+            top: 0%;
+            width: 23.5rem;
+            height: 15rem;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("img/repair.png");
+            background-size: cover;
+            z-index: 1;
+        }
+
+        .player::before {
+            content: url('img/player_button.svg');
+            position: relative;
+            top: 33%;
+            left: 39%;
+            width: 15rem;
+            height: 15rem;
+            z-index: -1;
         }
 
         .third_step {
@@ -986,17 +1018,19 @@
 
         .content_of_third_section {
             background-color: #131313;
+            max-width: 100%;
+            min-width: 100%;
         }
 
         .about_camera {
             color: #fff;
-            line-height: 6rem;
+            line-height: 2rem;
             max-width: none;
         }
 
         #picture_of_line {
             height: auto;
-            width: 30rem;
+            width: 10rem;
         }
 
         .form label {
@@ -1006,21 +1040,20 @@
         .form {
             flex-wrap: nowrap;
             flex-direction: column;
-            gap: 8rem;
+            gap: 2rem;
             width: auto;
             height: auto;
             justify-content: space-evenly;
         }
 
         .content_of_third_section .form {
-            margin-top: 20rem;
-            font-size: 4rem;
+            font-size: 1rem;
         }
 
         input[type=text] {
-            width: 40rem;
-            font-size: 1.5rem;
-            padding: 5rem 0px;
+            width: 20rem;
+            font-size: 1rem;
+            padding: 1rem 0px;
             box-sizing: border-box;
             background-color: #131313;
             color: #fff;
@@ -1030,7 +1063,7 @@
 
         ::placeholder {
             color: #fff;
-            font-size: 2.5em;
+            font-size: 1em;
         }
 
         .black_text {
@@ -1044,20 +1077,22 @@
         }
 
         .checkbox .common-font {
-            font-size: 4rem;
+            font-size: 1rem;
         }
 
         .content_of_third_section .form_button {
             display: block;
-            font-size: 3rem;
+            font-size: 1rem;
             order: 1;
             position: relative;
-            bottom: -10rem;
+            bottom: -2.7rem;
         }
 
         .content_of_fourth_section {
-            padding: 5rem;
+            padding: 2rem;
             height: auto;
+            max-width: 100%;
+            min-width: 100%;
         }
 
         .header_of_fourth_section {
@@ -1077,43 +1112,43 @@
         }
 
         .gallery_item1,.gallery_item2,.gallery_item3 {
-            height: 125rem;
+            height: 40rem;
         }
 
         .gallery_item1 > img {
             height: auto;
-            width: 80rem;
+            width: 21.9rem;
         }
 
         .gallery_item2 > img {
             height: auto;
-            width: 80rem;
+            width: 21.9rem;
         }
 
         .gallery_item3 > img {
             height: auto;
-            width: 80rem;
+            width: 21.9rem;
         }
 
         .desc1 ul li {
-            line-height: 6rem;
+            line-height: 2rem;
             color: #13131341;
         }
 
         .desc1 .header-text {
-            font-size: 1.5em;
+            font-size: 1rem;
         }
 
         .desc1 {
             max-width: none;
-            width: 67rem;
-            height: 61rem;
+            width: 17rem;
+            height: 21rem;
             display: flex;
             position: relative;
             flex-direction: column;
             background-color: #fff;
-            padding: 4rem 7rem;
-            top: -36rem;
+            padding: 1rem 2rem;
+            top: -10rem;
             left: 0;
             justify-content: flex-start;
             box-shadow: 1px 1px 30px #1313130d;
@@ -1135,26 +1170,27 @@
         }
 
         .fourth_step {
-            margin-top: 10em;
+            margin-top: 2rem;
         }
 
         #repair {
             height: auto;
-            width: 25rem;
+            width: 10rem;
         }
 
         .sixth_step {
-            margin-top: 5em;
+            margin-top: 0rem;
             height: auto;
             background-image: none;
             background-color: #fff;
         }
 
         .content_of_sixth_step {
-            padding: 5rem;
             align-items: center;
             text-align: center;
-            gap: 5em;
+            gap: 2rem;
+            max-width: 100%;
+            min-width: 100%;
         }
 
         /* .first_col_of_six_step {
@@ -1181,7 +1217,7 @@
 
         #picture1 {
             display: block;
-            width: 80rem;
+            width: 23rem;
             height: auto;
             object-fit: cover;
         }
@@ -1195,13 +1231,13 @@
         .mobile_form {
             display: block;
             height: auto;
-            margin-top: -31rem;
+            margin-top: -11rem;
         }
 
         .first_input,.second_input,.third_input {
             flex-direction: column;
             display: flex;
-            height: 18rem;
+            height: 4rem;
         }
 
         .cnt_of_form {
@@ -1209,26 +1245,27 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 5rem;
+            padding: 2rem;
         }
 
         .checkbox img {
             height: auto;
-            width: 3rem;
+            width: 1rem;
         }
 
         .cnt_of_form h3 {
             text-align: center;
-            font-size: 65.50px;
         }
 
         .mobile_form .form {
             padding-top: 9em;
             gap: 4em;
-            width: 80rem;
+            width: auto;
         }
 
-
+        .second_col {
+            display: none;
+        }
 
 
         .mobile .gold-button {
@@ -1249,8 +1286,10 @@
 
         .content_of_final_section {
             position: static;
-            padding: 5rem;
+            padding: 2rem;
             height: auto;
+            max-width: 100%;
+            min-width: 100%;
         }
 
         .map {
@@ -1263,13 +1302,12 @@
 
         .sm {
             order: 2;
-            width: 50em;
             height: auto;
         }
 
         .sm img {
             height: auto;
-            width: 50em;
+            width: 8rem;
         }
 
         footer {
@@ -1278,7 +1316,7 @@
 
         .map img {
             height: auto;
-            width: 80rem;
+            width: 23rem;
         }
     }
 
