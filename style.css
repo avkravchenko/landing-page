@@ -2,7 +2,6 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     outline: solid 2px red;
  }
 
  .header_nav {
@@ -824,7 +823,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            outline: solid red 2px;
             font-style: normal;
         }
 
