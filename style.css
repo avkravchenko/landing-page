@@ -255,6 +255,10 @@
      position: relative;
      left: -8rem;
  }
+
+ .nav_of_second_section li {
+     list-style-type: none;
+ }
  
 .Completed_projects {
     gap: 5rem;
