@@ -4,6 +4,10 @@
      box-sizing: border-box;
  }
 
+ button {
+     cursor: pointer;
+ }
+
  a {
     text-decoration: none;
 }
@@ -327,6 +331,7 @@
 }
 
 .player {
+    cursor: pointer;
     position: relative;
     width: 61rem;
     height: 32rem;
@@ -789,10 +794,10 @@
     }
 
     .map {
-        background-image: url("img/map1.png");
-        height: 45rem;
+        background-image: url("img/map_desktop.png");
+        height: 40rem;
         width: 70rem;
-        background-size: cover;
+        background-size: contain;
     }
 
     .lead-header {
@@ -858,10 +863,7 @@
         width: 354px;
     }
 
-    .map img {
-        height: auto;
-        width: 60rem;
-    }
+
 
     @media screen and (max-width: 414px) {
 
@@ -1363,6 +1365,7 @@
         }
 
         .content_of_final_section {
+            margin-bottom: 5rem;
             position: static;
             padding: 2rem;
             height: auto;
