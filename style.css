@@ -243,6 +243,8 @@
  .noss {
      display: flex;
      gap: 3rem;
+     position: relative;
+     left: -9rem;
  }
  
 .Completed_projects {
@@ -296,7 +298,7 @@
 .line {
     border-bottom-style: solid;
     border-color: #E3B873;
-    padding-bottom: 0.7em;
+    padding-bottom: 0.2rem;
     border-width: 1.5px;
 }
 
@@ -315,8 +317,15 @@
     position: relative;
     width: 61rem;
     height: 32rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("img/repair.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url("img/repair.png");
     background-size: cover;  
+}
+
+.player::before   {
+    content: url('img/player_btn_for_desctop.svg');
+    position: relative;
+    top: 36%;
+    left: 44%;
 }
 
 .repair_img {
@@ -696,6 +705,10 @@
         font-size: small;
     }
 
+    .final_section {
+        height: 80rem;
+    }
+
     .content_of_final_section {
         display: flex;
         height: auto;
@@ -817,6 +830,11 @@
         width: 354px;
     }
 
+    .map img {
+        height: auto;
+        width: 60rem;
+    }
+
     @media screen and (max-width: 414px) {
 
         * {
@@ -927,6 +945,7 @@
         }
 
         .slider {
+            position: relative;
             order: 1;
         }
     
@@ -980,8 +999,7 @@
         }
 
         div.column1, .column2 {
-            height: 10rem;
-            gap: 2em;
+            height: 11rem;
             width: 10rem;
         }
 
@@ -995,9 +1013,8 @@
             top: 0%;
             width: 23.5rem;
             height: 15rem;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("img/repair.png");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url("img/repair.png");
             background-size: cover;
-            z-index: 1;
         }
 
         .player::before {
@@ -1007,7 +1024,6 @@
             left: 39%;
             width: 15rem;
             height: 15rem;
-            z-index: -1;
         }
 
         .third_step {
@@ -1222,8 +1238,44 @@
 
         
 
-        #picture1::before {
-            content: url("img/image 5.3.png");
+        .slider::before {
+            content: url('img/slider_left.svg');
+            position: absolute;
+            top: 43%;
+            left: 4%;
+            width: fit-content;
+            height: 1rem;
+        }
+
+        .slider::after {
+            content: url('img/slider_right.svg');
+            position: absolute;
+            top: 43%;
+            right: 4%;
+            width: fit-content;
+            height: 1rem;
+        }
+
+        .picture1 {
+            position: relative;
+        }
+
+        .picture1::after {
+            content: url('img/slider_left.svg');
+            position: absolute;
+            top: 43%;
+            left: 4%;
+            width: fit-content;
+            height: 1rem;
+        }
+
+        .picture1::before {
+            content: url('img/slider_right.svg');
+            position: absolute;
+            top: 43%;
+            right: 4%;
+            width: fit-content;
+            height: 1rem;
         }
 
         .mobile_form {
