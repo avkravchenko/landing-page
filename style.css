@@ -420,11 +420,12 @@
      }
 
     .gallery {
+        gap: 2rem;
         display: flex;
         margin-top: 3rem;
         height: auto;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .gallery_item1 {
@@ -481,6 +482,7 @@
     }
 
     .fifth_step {
+        height: 41rem;
         background-image: url(img/house.png);
         background-repeat: no-repeat;
     }
@@ -706,7 +708,7 @@
     }
 
     .final_section {
-        height: 80rem;
+        height: 75rem;
     }
 
     .content_of_final_section {
@@ -774,7 +776,10 @@
     }
 
     .map {
-        height: auto;
+        background-image: url("img/map1.png");
+        height: 45rem;
+        width: 70rem;
+        background-size: cover;
     }
 
     .lead-header {
@@ -1065,7 +1070,7 @@
         }
 
         input[type=text] {
-            width: 20rem;
+            width: 24rem;
             font-size: 1rem;
             padding: 1rem 0px;
             box-sizing: border-box;
@@ -1310,7 +1315,7 @@
         .mobile_form .form {
             padding-top: 9em;
             gap: 4em;
-            width: auto;
+            width: 24rem;
         }
 
         .second_col {
@@ -1343,6 +1348,8 @@
         }
 
         .map {
+            height: 15rem;
+            width: 24rem;
             order: 0;
         }
 
@@ -1364,9 +1371,5 @@
             display: none;
         }
 
-        .map img {
-            height: auto;
-            width: 23rem;
-        }
     }
 
