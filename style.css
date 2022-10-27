@@ -643,6 +643,14 @@
         gap: 3rem;
     }
 
+    .gallery_7th {
+        width: 30%;
+    }
+
+    .gallery_7th h2 {
+        width: auto;
+    }
+
     .first_col, .second_col {
         display: flex;
         align-items: center;
@@ -678,7 +686,7 @@
     .seventh_gallery {
         margin-top: 2em;
         display: flex;
-        gap: 3em;
+        gap: 1vw;
         height: auto;
     }
 
