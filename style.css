@@ -252,6 +252,7 @@
  }
 
  .noss {
+    width: 50%;
     display: flex;
     left: 40%;
     gap: 3rem;
