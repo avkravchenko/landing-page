@@ -896,10 +896,11 @@
     .content_of_test #picture {
         top: 6.5rem;
         display: flex;
-        max-width: 58%;
+        max-width: 50%;
         height: auto;
         position: absolute;
         right: 1rem;
+        max-height: 80%;
     }
 
 
