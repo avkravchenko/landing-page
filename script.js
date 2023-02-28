@@ -93,6 +93,15 @@ function slider(){
         });
       });  
 
+    
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            moveSlider(index);
+            moveDesc(index);  
+        })
+    })
+
     function moveSlider(num) {
         let activeSlide = sliderImg.querySelector(".active");
             if (activeSlide) {
