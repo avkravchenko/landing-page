@@ -1112,7 +1112,7 @@ header {
        }
 
        .first_step {
-           height: 100vh;
+           height: 90vh;
        }
 
        .content_of_first_section, .content_of_second_section {
@@ -1121,8 +1121,21 @@ header {
            justify-content: center;
        }
 
+       .left-arrow{
+            top: 40%;
+        }
+
+       .right-arrow{
+            top: 40%;
+        }
+
        .content_of_first_section {
            padding: 2rem;
+       }
+
+       .content_of_second_section{
+           display: block;
+           margin-bottom: 4vh;
        }
 
        .logo {
@@ -1192,7 +1205,14 @@ header {
            position: relative;
            order: 1;
        }
+
+       #slider{
+        height: auto;
+       }
    
+       .image {
+        height: 235px;
+       }
 
        .slider img {
            max-width: 23.5rem;
@@ -1200,6 +1220,7 @@ header {
        }
 
        .description {
+           overflow: hidden;
            justify-content: flex-start;
            display: flex;
            flex-direction: row;
@@ -1433,7 +1454,7 @@ header {
        .desc1 {
            max-width: none;
            width: 70vw;
-           height: 61vw;
+           height: 70vw;
            display: flex;
            position: relative;
            flex-direction: column;
@@ -1461,6 +1482,7 @@ header {
 
        .fourth_step {
            margin-top: 2rem;
+           margin-bottom: -150px;
        }
 
        #repair {
@@ -1538,9 +1560,6 @@ header {
            width: fit-content;
            height: 1rem;
        }
-
-
-
 
 
        .mobile_form {
